@@ -17,7 +17,9 @@ RUN apt-get update && apt-get install -y \
     vim \
     unzip \
     git \
-    curl
+    curl \
+    nodejs \
+    npm
 #RUN set -ex && apk --no-cache add postgresql-dev
 
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
